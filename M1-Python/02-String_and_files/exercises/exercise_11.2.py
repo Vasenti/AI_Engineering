@@ -13,7 +13,7 @@ def add_to_dictionary(dictionary, text):
     return dictionary
 
 def show_result(dictionary):
-    for key in dictionary:
+    for key in sorted(dictionary):
         print(key, ":", dictionary[key])    
 
 with open("./text-files/blakepoems.txt") as text_file:
